@@ -1,0 +1,91 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    height:100vh;
+    font-family: Open Sans, sans-serif;
+    background: #F1F1F1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width:70vw;
+    min-height:50vh;
+    margin: 0 auto; 
+    background: white;
+    border-radius: 1em;
+    font-size:1rem;
+}
+
+
+
+  .bloc-img{
+      flex-basis:35%;
+  }
+
+  .bloc-img img{
+    width:80%;
+    height:80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.bloc-nombres{
+    display:flex;
+    flex-direction: column;
+    background-color: #DADADA;
+}
+
+.bloc-form input[type="number"]{
+    display: block;
+    width:100%;
+    padding: 0.8em;
+    font-size:1.2em;
+    border: 1px solid #DADADA;
+    /*border: 1px solid rgb(0, 205, 10);*/
+}
+
+    
+.bloc-form input[type="button"]{
+    display: block;
+    width:100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    margin-top:1em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+
+.resultat{
+    padding:1em;
+    font-size:2em;
+    font-weight: bolder;
+    text-align: center;
+    color:rgb(0, 205, 10);
+}
+
+@media all and (min-width: 600px){
+
+    .bloc-nombres{
+        flex-direction: row;
+    }   
+
+}
